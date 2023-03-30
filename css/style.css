@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(75, 73, 73);
+    font-size: 17px;
+}
+
+/* --------------------------------------------------------- HEADER -------------------------------------------------------------- */
+
+header{
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.navbar{
+    padding-top:30px ;
+}
+h1 i{
+    font-size:inherit;
+    letter-spacing: 2px;
+}
+nav a{
+    color:rgb(68, 67, 67);
+}
+nav i{
+    cursor: pointer;
+}
+nav a:hover{
+    color: #ff4c4c;
+    transition: all .5s ease;
+}
+nav .dropdown-menu a:hover{
+    color: #ff4c4c;
+}
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+                             /* --------------------------------------------------------------------------*/
+
+.search-auto{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+.search-auto.open {
+    opacity: 1;
+    visibility: visible;
+}
+.search-auto button.search-btn {
+    color:#ff4c4c;
+    position: fixed;
+    top: 40%;
+    left: 68%;
+}
+.search-auto .close{
+    color:#ff4c4c ;
+    margin: 50px;
+    cursor: pointer;
+}
+.search-auto .input-search input{
+    width: 650px;
+    height: 50px;
+    border: none;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+}
+ .search-auto{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background: rgba(25, 23, 23, 0.671);
+    height: 800px;
+}
+.search-auto button{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-left: 15px;
+    border-radius: 20px;
+    border-right: 1px solid #000;
+    border-radius: 15px;
+}
+
+                             /* ------------------------------------------------------------------------ */
+
+.dark {
+    background: rgb(0, 0, 0);
+    color: #fff !important;
+}
+.dark .btn {
+    color: #fff;
+}
+.dark .navbar-bg a {
+    color: #fff !important;
+}
+.dark .navbar-bg {
+    background-color: #000 !important;
+}
+.dark i{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+button.mode-switch {
+    background: transparent;
+    border: none;
+}
+.dark .navbar{
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 9999;
+    color: #fff;
+}
+.dark .navbar i{
+background-color: #fff;
+border: none;
+color: #000;
+}
+
+/* -------------------------------------------------------- SECTION 1 ------------------------------------------------------------ */
+
+.first{
+    width: 100%;
+    background: url(../img/banner-png.png) no-repeat center fixed;
+    background-size: cover;
+    height: 700px;
+    /* position: relative; */
+}
+.top img{
+    transform: rotate(-22deg);
+    padding-right: 50px;
+}
+.images{
+    position: absolute;
+    top: 37%;
+    left: 42px;
+}
+.text{
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+}
+.first h2{
+    font-size: 70px;
+    color: #000;
+}
+.first a{
+    background-color: #ff4c4c;
+    border: none;
+    padding: 12px 35px;
+    font-size: 17px;
+    line-height: 34px;
+    transition: 0.3s ease-in;
+    box-shadow: rgb(12 12 12 / 32%) 0px 8px 20px 0px;
+    font-weight: 600;
+}
+.first a:hover{
+    background-color: #956fef;
+    transition: all .5s ease;
+    box-shadow: none ;
+}
+
+/* --------------------------------------------------------- SECTION 2 ----------------------------------------------------------- */
+
+.text1{
+    color: #000;
+}
+.text1 h3::after , .text1 h3::before {
+    content: "";
+    background: rgb(48, 46, 46);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+}
+.text1 h3::after{
+    left: -20px;
+    bottom: -75px;
+}
+.text1 h3::before{
+    left: 20px;
+    bottom: -80px;
+}
+.row .p-3 a{
+    color: #000;
+    font-weight:bold;
+}
+a.fee-class-w3.mt-3 {
+    color: #ff4c4c;
+}
+.row .card:hover{
+    cursor: pointer;
+    box-shadow: -1px 2px 12px -9px rgb(0 0 0 / 50%);
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+}
+.row .card:hover a{
+    color:#956fef;
+    transition: 0.3s ease-in;
+}
+.all{
+    background-color: #ff4c4c;
+    border: none;
+    padding: 12px 35px;
+    font-size: 17px;
+    line-height: 34px;
+    transition: 0.3s ease-in;
+    box-shadow: rgb(12 12 12 / 32%) 0px 8px 20px 0px;
+    font-weight: 600;
+}
+.all:hover{
+    background-color: #956fef;
+    transition: all .5s ease;
+    box-shadow: none ;
+}
+
+/* ---------------------------------------------------------- SECTION 3 ---------------------------------------------------------- */
+
+
+i.fas.fa-users , .fa-bullhorn , .fa-umbrella{
+    border-radius: 50%;
+    background: rgb(0, 0, 0)4c;
+    padding: 15px;
+}
+.about .ii{
+    color: #ff4c4c;
+    display: block;
+    font-size: 35px;
+    line-height: 105px;
+    border-radius: 50%;
+}
